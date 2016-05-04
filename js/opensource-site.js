@@ -4,7 +4,7 @@ $(document).ready(function() {
   var not_forked = 0;
   var forked = 0;
   var repos = [];
-  var org = new Organization('UnMonk', []);
+  var org = new Organization('unmonk', []);
 
   loadRepositories = function(org, page) {
     page = page || 1;
@@ -22,12 +22,19 @@ $(document).ready(function() {
         org.addReposToContainer($('.projects .not-featured'), org.regularRepos());
 
         $('.project-count').html(org.forkedCount());
+        $.get('https://api.github.com/orgs/unmonk/members', function(data) {
+          $('.dev-count').html(data.length);
         });
       }
     });
   }
 
   loadRepositories(org);
+
+  $.get('https://api.github.com/orgs/unmonk/members', function(data) {
+    users = data.length
+    $('.stats-users').html("We have " + users + " Yelpers contributing to open source projects");
+  });
 
   $('.titled-subnav a').click(function(e) {
     e.preventDefault();
