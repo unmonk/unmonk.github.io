@@ -7,7 +7,7 @@ oss_projects['meteor-blast'] = {
 oss_projects['ScottWeaverSite'] = {
   featured: true,
   position: 3,
-  background: 'scottweaversite.jpg'
+  background: 'scottweaversite.JPG'
 };
 oss_projects['SemesterScheduleApp'] = {
   featured: true,
@@ -19,3 +19,15 @@ oss_projects['StudentEnrollmentManagement'] = {
   position: 2,
   background: 'javastudents.jpg'
 }
+oss_projects['Project-Infinity'] = {
+  featured: true,
+  position: 5,
+  background: 'pygame.JPG'
+}
+
+oss_projects['MovieSearchandDatabase'] = {
+  featured: true,
+  position: 6,
+  background: 'moviesdb.jpg'
+}
+
