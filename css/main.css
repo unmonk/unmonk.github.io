@@ -1,154 +1,151 @@
-[ng\:cloak], [ng-cloak], .ng-cloak {
-  display: none !important;
+p {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.loading {
-    text-align: left;
+h3 a {
+  color: #c41200;
+
+  /* Some project names are too long :( */
+  overflow: hidden;
+  display: inline-block;
+  width: 200px;
+  text-overflow: ellipsis;
 }
 
-.center {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+h3 a i {
+  color: #000;
+  font-size: 14px;
 }
 
-.featured-projects {
-    margin-bottom: 25px;
+.top-shelf .container {
+  padding: 0;
 }
 
-.featured-projects .carousel-inner {
-    background-color: #01BCF3;
+.top-shelf h1 {
+  padding-top: 52px;
 }
 
-.featured-projects .carousel-inner .item a:hover, a:active {
-    text-decoration: none;
+.top-shelf-grey .container {
+  background: url(/img/unmonk.png) no-repeat right bottom;
+  height: 240px;
+  width: 960px;
 }
 
-.featured-projects .carousel-inner .panel {
-    background-color: #01BCF3;
-    border: none;
-    width: 70%;
+.main-container {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 960px;
 }
 
-.featured-projects .carousel-inner .carousel-panel {
-    margin-bottom: 0px; 
-    padding-bottom:20px;
-}
-    
-.featured-projects .carousel-inner .panel .panel-heading {
-    background-color: #01BCF3;
-    border: none;
+.layout-block .column-alpha {
+  margin-left: 0;
+  padding: 0;
+  width: 100%;
 }
 
-.featured-projects .carousel-inner .panel .panel-heading .panel-title {
-    font-size: 44px;
-    color: #FFF;
-    margin: auto;
+.projects h2 {
+  clear: both;
+  padding-top: 15px;
+  padding-bottom: 6px;
 }
 
-.featured-projects .carousel-inner .panel .description {
-    font-size: 30px;
-    overflow:hidden;
-    -ms-text-overflow:ellipsis;
-    text-overflow:ellipsis;
-    height: 110px;
-    color: #FFF;
+.project.island {
+  cursor: pointer;
+  float: left;
+  font-size: 12px;
+  margin-bottom: 24px;
+  margin-right: 20px;
+
+  position: relative;
+
+  height: 200px;
+  width: 218px;
 }
 
-.featured-projects .panel-body .span-stars-group {
-    margin: 2px 10px 2px 2px;
-    color: #FFF;
-    font-size: 18px;
+.project.island.last-in-row {
+  margin-right: 0px;
 }
 
-.featured-projects .panel-body .span-forks-group {
-    margin: 2px 10px 2px 2px;
-    color: #FFF;
-    font-size: 18px;
+.project.island.featured-project {
+  height: 300px;
 }
 
-.carousel-control.left, .carousel-control.right{ 
-    background: none !important; 
-    filter: progid:none !important; 
-    color: #FFF !important;
-    cursor: pointer;
+.project:hover {
+  background: #f5f5f1;
 }
 
-.all-projects .no-repos {
-    margin: 10px 0px 20px 50px;
-    font-size: 20px;
-    color: #F65314;
-}
-    
-.all-projects .row .panel .panel-heading {
-    background-color: rgb(237, 237, 237);
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    overflow:hidden;
-    text-wrap: none;
-    -ms-text-overflow:ellipsis;
-    text-overflow:ellipsis;
-    height: 50px;
-    padding: 0px;
+.project .island-item.featured-image {
+  height: 100px;
+  padding: 0;
 }
 
-.all-projects .row .panel .panel-heading a:hover, a:active {
-    text-decoration: none;
+.project .island-item.featured-image img {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
 }
 
-.all-projects .row .panel .panel-heading .panel-title-area {
-    color: rgb(0, 0, 0);
-    font-size: 24px;
-    padding: 10px 15px 10px 15px;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    overflow:hidden;
-    text-wrap: none;
-    white-space: nowrap;
-    vertical-align: middle;
-    line-height: 100%;
-    -ms-text-overflow:ellipsis;
-    text-overflow:ellipsis;
+.project h3 {
+  margin-bottom: 10px;
 }
 
-.all-projects .row .panel .fork-info {
-    font-size: 14px;
-    overflow:hidden;
-    -ms-text-overflow:ellipsis;
-    text-overflow:ellipsis;
-    height: 26px;
-    padding: 5px 10px 5px 10px;
+.project .logo {
+  position: relative;
+  top: 5px;
 }
 
-.glyphicon {
-    margin: 0px 4px 0px 4px;
-    padding: 0px 4px 0px 4px;
-}
-    
-.all-projects .row .panel .fork-info span {
-    overflow:hidden;
-    -ms-text-overflow:ellipsis;
-    text-overflow:ellipsis;
+.project .bottom-links {
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  width: 196px;
+
+  position: absolute;
+  bottom: 0px;
 }
 
-.all-projects .row .panel .description {
-    overflow:hidden;
-    -ms-text-overflow:ellipsis;
-    text-overflow:ellipsis;
-    height: 65px;
+.project.island-light.island-stack.island > .island-item {
+  border-color: #fff !important;
 }
 
-.all-projects .panel-body .span-stars-group {
-    margin: 2px 10px 2px 2px;
+.project:hover.island-light.island-stack.island > .island-item {
+  border-color: #e5e5e1 !important;
 }
 
-.all-projects .panel-body .span-forks-group {
-    margin: 2px 10px 2px 2px;
+.project:hover .bottom-links {
+  background: #fff;
 }
 
-.all-projects .paginator li {
-    display:inline;
-    list-style-type: none;
-    padding-left: 20px;
-    cursor: pointer;
+.project .bottom-links a {
+  font-size: 12px;
+  font-weight: bold;
 }
+
+.project .repo-info {
+  color: #ccc;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.project .repo-info .language {
+  color: #999;
+  font-weight: bold;
+}
+.project .repo-info .Python { color: #228222; }
+.project .repo-info .Ruby { color: #d83800; }
+
+.project .repo-info h3 { margin-bottom: 10px; }
+.project .repo-info span { margin-right: 20px; }
+.project .bottom-links a i { color: #000; }
+
+.footer {
+  clear: both;
+}
+
+.footer-language, .footer-country {
+  display: block;
+}
+
+
+/* Octicon changes */
+.octicon.octicon-star { font-size: 14px; }
+.octicon.octicon-repo-forked { font-size: 12px; }
