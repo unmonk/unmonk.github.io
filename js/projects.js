@@ -19,15 +19,9 @@ oss_projects['StudentEnrollmentManagement'] = {
   position: 2,
   background: 'javastudents.jpg'
 }
-oss_projects['Project-Infinity'] = {
-  featured: true,
-  position: 5,
-  background: 'pygame.JPG'
-}
-
 oss_projects['MovieSearchandDatabase'] = {
   featured: true,
-  position: 6,
+  position: 5,
   background: 'moviesdb.jpg'
 }
 
