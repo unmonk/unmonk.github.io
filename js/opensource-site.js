@@ -33,7 +33,7 @@ $(document).ready(function() {
 
   $.get('https://api.github.com/orgs/unmonk/members', function(data) {
     users = data.length
-    $('.stats-users').html("We have " + users + " Yelpers contributing to open source projects");
+    $('.stats-users').html("There is " + users + "people working on my projects.");
   });
 
   $('.titled-subnav a').click(function(e) {
